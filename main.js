@@ -1,6 +1,9 @@
 
+const dropdowns = document.querySelectorAll('.dropdown select');
 
-  const dropdowns = document.querySelectorAll(".dropdown select");
-  for (code in countryList) {
-    console.log(code);
-  }
+for (let select of dropdowns){
+    for(code in countryList){
+        console.log(code, countryList[code]);
+    }
+
+}
